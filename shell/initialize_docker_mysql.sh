@@ -7,10 +7,14 @@ PASSWORD=""
 
 usage() {
     cat <<-EOF
-USAGE: $(basename "$0")
+USAGE: $(basename "$0") [OPTIONS]
 
     OPTIONS
-
+        -h | --help Help message
+        --name      Docker image name
+        --database  Database name for mysql
+        --user      Username for mysql
+        --password  Password for mysql
 
 EOF
     return;
